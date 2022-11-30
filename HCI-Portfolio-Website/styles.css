@@ -1,0 +1,306 @@
+/* creates the
+  navigation bar at the top
+    */
+nav.top-nav{
+  background-color: #4682B4;
+  position: fixed;
+  height: 65px;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  box-shadow: 0px 2px 2px #5cdb95;
+}
+
+/* indicates the current page
+  by underline
+    */
+nav [aria-current=page]{
+  border-bottom: .2em solid #EDF5E1;
+
+}
+
+/* styles the navigation bar elements
+  as list items */
+nav.top-nav li{
+  display: inline-block;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  margin: 5px;
+  user-select: none;
+  font-size-adjust: auto;
+}
+
+/* underlines the navigation (list) element
+   upon hovering
+  */
+nav.top-nav li:hover {
+  text-decoration: underline;
+  color: #EDF5E1;
+}
+
+/* creates the unordered list */
+nav.top-nav ul{
+  list-style: none;
+}
+
+/* prevents highlighting of clicked
+  navigation elements */
+nav.top-nav a{
+  color: #EDF5E1;
+  text-decoration: none;
+}
+
+body{
+  background-color: #2E8B57;
+}
+
+/* colors the background of main */
+main{
+  margin-left: -2%;
+  margin-right: -2%;
+  margin-bottom: 0;
+  padding-top: 65px;
+  background-color: #2E8B57;
+
+}
+
+/* formats heading of the pages */
+.main-header{
+  word-wrap: break-word;
+  width: 60%;
+  text-align: center;
+  color: #EDF5E1;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Courier New', monoscape;
+}
+
+/* removes highlighting and underline from link */
+.main-header a{
+  text-decoration: none;
+  color: #EDF5E1;
+}
+
+/* styles header */
+.main-header h1{
+  margin-top: 5vh;
+  font-size: 1.75em;
+  font-family: 'Courier New', monospace;
+  color: #EDF5E1;
+  font-size-adjust: auto;
+}
+
+/* styles text below header */
+.main-header p{
+  font-family: 'Courier New', monospace;
+  font-size: 1.25em;
+  color: #EDF5E1;
+}
+
+/* creates flexbox for formatting landing page projects */
+.projects{
+  display: flex;
+	flex-direction: row;
+  text-align: center;
+  position: relative;
+	margin-top: 6%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/* styles project titles */
+.project-title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-decoration: none;
+  font-family: 'Courier New', monospace;
+  color: #EDF5E1;
+}
+
+/* removes highlighting of hyperlink */
+.project-title a{
+  color: #EDF5E1;
+  text-decoration: none;
+}
+
+/* formats the project pics */
+.project-pic{
+  margin-top: 2.5%;
+  border-radius: 2%;
+  max-width: 100%;
+  max-height: 100%;
+  width: 75vw;
+  height: 40vh;
+  box-shadow: 0px 4px 4px #EDF5E1;
+  margin-bottom: 45%;
+}
+
+/* creates flexbox for grouping of words and pics
+  to make them side by side */
+.row-wrapper{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  height: 50%;
+}
+
+/* creates flexbox to create a column of information
+  and a column of pictures */
+.column-wrapper{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 11.5%;
+  padding-top: 2.5%;
+  margin-right: 10px;
+  width: 50%;
+}
+
+/* Formats the general subheaders. Not really headers,
+  they are just discussion points on various pages.
+  */
+.general-headers{
+  margin-left: -17.5%;
+  margin-right: 60%;
+  font-size: 1.25em;
+/*  font-size: 1.5vw; */
+  font-weight: bold;
+  text-align: left;
+  margin-right: 50px;
+  color: #EDF5E1;
+  font-family: 'Courier', monoscape;
+  white-space: nowrap;
+}
+
+/* formats the text containing general information
+  throughout the various pages */
+.general-information{
+  margin-top: -10px;
+  margin-left: -15%;
+  width: 100%;
+  text-align: left;
+  font-size: 1em;
+  color: #EDF5E1;
+  font-family: 'Courier New', monoscape;
+}
+
+/* formats the pictures accompanying
+  the stock pitch */
+.stock-pictures{
+  margin-top: 4%;
+  border-radius: 2%;
+  margin-left: -10%;
+/*  width: 100vw;
+  height: 45vh; */
+  width: 40vw;
+  height: 30vw;
+  box-shadow: 0px 4px 4px #EDF5E1;
+  margin-bottom: 10%;
+}
+
+/* formats the bio pictures to fit the pages
+  */
+.bio-pictures{
+  margin-top: 4%;
+  border-radius: 2%;
+  margin-left: -20%;
+  margin-right: 10%;
+  width: 31vw;
+  height: 34vw;
+/*  max-width: 100%;
+  max-height: 50%;
+  width: 110vw;
+  height: 37.5vh; */
+  box-shadow: 0px 4px 4px #EDF5E1;
+  margin-bottom: 10%;
+}
+
+/* formats the picture of my resume */
+.resume-picture{
+  text-align: center;
+  margin-top: 25px;
+  width: 75%;
+  height: 75%;
+  margin-bottom: 50px;
+}
+
+/* formats window for external content — My Movember Website */
+.movember{
+  margin-top: 4%;
+  border-radius: 2%;
+  margin-left: -10%;
+  margin-right: 10%;
+  width: 40vw;
+  height: 50vw;
+  margin-bottom: 10%;
+}
+
+/* formatting for linkedin badge */
+#badge{
+  margin-left: -10%;
+  width: 10vw;
+  height: 10vw;
+}
+
+/* ASML external content formatting */
+.asml {
+  margin-top: 4%;
+  border-radius: 2%;
+  margin-left: -10%;
+  margin-right: 10%;
+  width: 40vw;
+  height: 30vw;
+  margin-bottom: 10%;
+  border: 0;
+}
+
+/* the following table and elements are the formatting
+  for the data visualization of part of my stock pitch
+    */
+.exposure-table{
+  margin-top: 5%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  width: 100%;
+  font-size: 1em;
+  height: 5vw;
+  margin-left: -15%;
+  font-family: 'Courier', monoscape;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+/* header formatting */
+.exposure-table thead tr{
+  background-color: #006400;
+  color: #EDF5E1;
+  text-align: left;
+  font-weight: bold;
+  border-bottom: 1px solid grey;
+}
+
+/* table title formatting */
+.exposure-table caption{
+  text-align: center;
+  color: #EDF5E1;
+  font-weight: bold;
+  background-color: #006400;
+  border-bottom: 1px solid grey;
+  height: 1.75vw;
+  padding: 1%;
+}
+
+
+.exposure-table th{
+  padding: 1%;
+}
+/* data cell formatting */
+.exposure-tabe td{
+  padding: 1%;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.exposure-table tbody{
+  border: 1px solid black;
+}
